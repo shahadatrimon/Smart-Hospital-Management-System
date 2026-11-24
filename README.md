@@ -21,7 +21,7 @@ The application provides three dedicated user modules: Administrator, Doctor, an
 - Introduce the online doctor appointment booking service.
 - Offer easy navigation to access healthcare services.
 
-  Home Page : "C:\Users\Rimon\Pictures\project dashboard\Screenshot 2026-11-21 213550.png"
+  Home Page : ![eDoc Home Page](homepage.png)
 
 ### 👨‍💼 Administrator Module
 - Add, edit, and delete doctor profiles.

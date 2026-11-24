@@ -12,6 +12,17 @@ The application provides three dedicated user modules: Administrator, Doctor, an
 
 ## ✨ Core Features
 
+### **🏥 Home Page Module**
+
+- Display the website logo and project name.
+- Provide Login and Register options for users.
+- Display a healthcare-related banner with a welcome message.
+- Provide a **Make Appointment** button for booking doctor appointments.
+- Introduce the online doctor appointment booking service.
+- Offer easy navigation to access healthcare services.
+
+  Home Page : "C:\Users\Rimon\Pictures\project dashboard\Screenshot 2026-11-21 213550.png"
+
 ### 👨‍💼 Administrator Module
 - Add, edit, and delete doctor profiles.
 - Create and remove doctor schedules and sessions.

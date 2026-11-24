@@ -1,127 +1,191 @@
-# HOSPITAL MANAGEMENT SYSTEM
-![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(1).png)
+# 🏥 Smart Hospital Management System (eDoc)
 
-Simple web project that made for hospital management.
-This project helps a certain medical establishment such as a clinic or a hospital clients/patients to request an appointment with a doctor online. This project can also help doctors to manage the schedules of their appointments with their patients. This doctor's appointment system will organize the schedules of each patient's appointment, which will be submitted as a request to the doctor they have selected. The system has 3 sides which are the administrator, the doctor, and the patient. The system admin will populate the list of the doctors with their specialties and along with the doctor's details and system credentials. The patients will browse the doctor's appointment system website to find a doctor that has the specialty of their needs. The patient can check the doctor's weekly schedule to help them to choose the day and time which they can comply for the appointment and they will submit their request for an appointment. After that, the doctors can view all their appointments and the appointment request of the patients for their availability.
+### PHP & MySQL-Based Doctor Appointment Management Application
 
-  1.Admin
-  
-  
-    Admin can add doctors,edit doctors, delete doctors;
+**Making Healthcare Appointment Management Simpler and More Accessible.**
+
+## 📌 About the Project
+
+Smart Hospital Management System (eDoc) is a web-based doctor appointment management application developed to simplify healthcare appointment booking and administrative operations.
+
+The application provides three dedicated user modules: Administrator, Doctor, and Patient. Each user has access to specific functionalities through a centralized login system.
+
+## ✨ Core Features
+
+### 👨‍💼 Administrator Module
+- Add, edit, and delete doctor profiles.
+- Create and remove doctor schedules and sessions.
+- View registered patient information.
+- View patient appointment bookings.
+- Access the administrative dashboard.
+
+Admin : ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(3).png)
+
+### 👨‍⚕️ Doctor Module
+- View assigned appointments.
+- View scheduled sessions.
+- Access patient information.
+- Manage account settings.
+- Access the doctor dashboard.
+
+Doctors: ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(9).png)
     
-    Schedule new doctors sessions,remove sessions;
-    
-    View patients details;
-    
-    View booking of patients;
-    
-    
-![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(3).png)
-    
- 
- 
-  2.Doctors
-  
-  
-    View their Appointment;
-    
-    view their scheduled sessions;
-    
-    view details of patients;
-    
-    delete account;
-    
-    edit account settings;
-    
-![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(9).png)
-    
-  3.Patiens(Clients)
-  
-  
-    make appointment online;
-    
-    create accounts themslves;
-    
-    view their old booking;
-    
-    delete account;
-    
-    edit account settings;
-    
-    
-![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(6).png)  
-    
-If you are Admin,doctor or patient ,only have one page to login :)
+### 🧑‍🤝‍🧑 Patient Module
+- Create a personal account.
+- Book doctor appointments online.
+- View previous appointment bookings.
+- Manage account settings.
+- Access the patient dashboard.
 
-  
------------------------------------------------
+Patiens(Clients) : ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(6).png)  
 
+## 🛠️ Technology Stack
 
-# HOW TO GET STARTED
+| Component | Technology |
+|---|---|
+| Backend | PHP |
+| Frontend | HTML, CSS |
+| Database | MySQL |
+| Web Server | Apache |
+| Containerization | Docker |
 
-Open your XAMPP Control Panel and start Apache and MySQL.
+### Environment Information
 
-Extract the downloaded source code zip file.
+The original project documentation specifies:
 
-Copy the extracted source code folder and paste it into the XAMPP's "htdocs" directory.
+- Apache: 2.4.39
+- PHP: 7.3.5
+- MySQL: 5.7.26
 
-Browse the PHPMyAdmin in a browser. i.e. http://localhost/phpmyadmin
+A Dockerfile for PHP 8.2 with Apache setup is also included in this repository. Compatibility should be tested before treating PHP 8.2 as a verified application requirement.
 
-Create a new database naming edoc.
+## 📂 Project Structure
 
-Import the provided SQL file. The file is known as DATABASE edoc.sql located inside the source code root folder.
+```text
+Smart-Hospital-Management-System/
+│
+├── admin/
+├── doctor/
+├── patient/
+├── css/
+├── img/
+│
+├── Dockerfile
+├── README.md
+├── SQL_Database_edoc.sql
+├── connection.php
+├── create-account.php
+├── index.html
+├── login.php
+├── logout.php
+└── signup.php
+```
 
-Browse the Doctor's Appointment System in a browser. i.e. http://localhost/HOSPITAL%20MANAGEMENT%20SYSTEM/.
+## ⚙️ Installation Guide
 
+### Requirements
+- XAMPP
+- PHP
+- MySQL
+- Apache
+- Web Browser
 
+### Step 1: Clone Repository
 
+```bash
+git clone https://github.com/shahadatrimon/Smart-Hospital-Management-System.git
+```
 
+### Step 2: Configure Local Server
 
+Move the project folder into:
 
+```text
+C:/xampp/htdocs/
+```
 
+Start Apache and MySQL from XAMPP Control Panel.
 
+### Step 3: Create Database
 
+Open:
 
+```text
+http://localhost/phpmyadmin
+```
 
+Create a database named:
 
+```text
+edoc
+```
 
+### Step 4: Import SQL File
 
-DATABASE NAME: 'edoc'
+Import the following file into the `edoc` database:
 
-# BUILDIN USER ACCOUNTS OF THIS PROJECT
+```text
+SQL_Database_edoc.sql
+```
 
-ADMIN EMAIL:		admin@edoc.com
+### Step 5: Configure Database Connection
 
-ADMNIN PASSWORD:	123
+Open:
 
+```text
+connection.php
+```
 
-DOCTOR EMAIL:		doctor@edoc.com
+Update the database hostname, username, password, and database name according to your local environment.
 
-DOCTOR PASSWORD:	123
+Never publish production database credentials.
 
+### Step 6: Run Application
 
-PATIENT EMAIL:		patient@edoc.com
+Open the following URL:
 
-PATIENT PASSWORD:	123
+```text
+http://localhost/Smart-Hospital-Management-System/
+```
 
+## 🎯 Project Objectives
 
+- Digitize doctor appointment booking.
+- Simplify hospital appointment administration.
+- Organize doctor schedules and patient records.
+- Provide role-based user experiences.
+- Demonstrate practical PHP and MySQL application development.
 
+## 🎬 Project Demonstration
 
+[Watch Project Demo on YouTube](https://youtu.be/mAWHYAHmit4)
 
----------------------------------------
-# The Project was developed using the following:
+## 🔗 Original Project Reference
 
-Apache Version: 	2.4.39
+The previous project documentation references the following SourceCodester project:
 
-PHP Version: 		7.3.5
+[Simple Doctors Appointment Project](https://www.sourcecodester.com/hashendara/simple-doctors-appointment-project.html)
 
-Server Software: 	Apache/2.4.39 (Win64) PHP/7.3.5
+Please refer to the original source and its applicable licensing or reuse terms.
 
-MySQL Version: 		5.7.26
+## 👨‍💻 Developer
 
-Also available in sourcecodester.com : https://www.sourcecodester.com/hashenudara/simple-doctors-appointment-project.html
+**Shahadat Hossen Rimon**
 
-Demo video: https://youtu.be/mAWHYAHmit4
+Aspiring Software Engineer | Full-Stack Web Developer
 
+B.Sc. (Honours) in Computer Science & Engineering  
+University of Science & Technology Chittagong (USTC)
 
+📍 Sitakunda, Chittagong, Bangladesh
 
+- GitHub: [shahadatrimon](https://github.com/shahadatrimon)
+- LinkedIn: [Connect with Me](https://www.linkedin.com/in/md-remon-b6bb72450)
+
+## 📄 License
+
+No license file is currently specified in this repository. Please check the original project's licensing terms before redistributing the source code.
+
+---
+
+⭐ Thank you for exploring this project!
